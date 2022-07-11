@@ -32,7 +32,9 @@ function playRound(playerSelection, computerSelection){
     else return 0;
 }
 
-let pMove  = prompt("Make your move (Rock-0, Paper-1, Scissor-2)")
+function game(){
+    for(i=0; i<5; i++){
+        let pMove  = prompt("Make your move (Rock-0, Paper-1, Scissor-2)")
 let result = playRound(pMove, computerPlay());
 
 if(result == 0){
@@ -42,4 +44,8 @@ else if(result == 1){
     console.log("You Won")
 }
 else console.log("You Lost")
+    }
+}
 
+
+game()
