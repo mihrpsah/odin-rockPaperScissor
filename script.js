@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         let pMove = prompt("Make your move (Rock-0, Paper-1, Scissor-2)")
         let result = playRound(pMove, computerPlay());
 
